@@ -1,0 +1,15 @@
+/* Add your styles here */
+div{
+  display: block;
+}
+.adentro{
+  display: inline-block;
+}
+h1{
+  text-align: center;
+  color:gainsboro;
+}
+p{
+  color:gainsboro;
+}
+
