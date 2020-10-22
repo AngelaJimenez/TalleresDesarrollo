@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller 1</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script type="module" src="./scripts/course.js"></script>
+    <script type="module" src="./scripts/dataCourses.js"></script>
+    <script type="module" src="./scripts/estudiantes.js"></script>
+    <script type="module" src="./scripts/dataestudiantes.js"></script>
+    <script type="module" src="./scripts/main.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>Angela Jimenez</h1>
+                <img class="img-fluid max-width: 100% height: auto"
+                    src="./images/fotoPerfil.jpeg"
+                    style="display:block; border-radius:50%; width: 75%; height: 48%; margin:auto;"  alt="Avatar">
+                <br>
+                <br>
+                <div class="card">
+                    <div class="card-body">
+                        <h2>Datos Personales</h2>
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                            <tbody id="estudiantes">
+                            </tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col">
+                <br>
+                <br>
+                <div class="card">
+                    <div class="card-body">
+
+                        <h2>Cursos Actuales</h2>
+                        <table class="table">
+
+                            <form style="margin:10px;">
+                                <div class="form-row">
+                                    <div class="col">
+                                        <input type="number" class="form-control" min="0" max="5" id="search-min" placeholder="minimo">
+                                        <input type="number" class="form-control" min="0" max="5" id="search-max" placeholder="maximo">
+                                    </div>
+                                    <div class="col">
+                                        <button type="button" id="button-filterByCreditos"
+                                            class="btn btn-success">Aplicar</button>
+                                    </div>
+                                </div>
+
+
+                                <form style="margin:10px;">
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <input type="text" class="form-control" id="search-box"
+                                                placeholder="Filtrar por nombre">
+                                        </div >
+                                        <div class="col" >
+                                            <button type="button" id="button-filterByName"
+                                                class="btn btn-success">Aplicar</button>
+                                        </div>
+                                    </div>
+
+
+
+                                </form>
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th>Curso</th>
+                                        <th>Profesor</th>
+                                        <th>Créditos</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="courses">
+                                </tbody>
+                        </table>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
